@@ -1,0 +1,14 @@
+create database event;
+use event;
+create table bookevent
+(
+	eventid int,
+	eventname varchar(20),
+	name varchar(20),
+	dob varchar(20),
+	venue varchar(20),
+	timing varchar(20),
+	noc varchar(20),
+	doe varchar(20),
+	contactno varchar(20)
+);

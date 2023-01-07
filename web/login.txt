@@ -1,0 +1,8 @@
+create table login
+(
+	id varchar(20) primary key,
+	user varchar(20),
+	password varchar(20),
+	sques varchar(50),
+	sans varchar(50)
+);

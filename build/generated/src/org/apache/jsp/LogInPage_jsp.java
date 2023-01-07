@@ -1,0 +1,272 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class LogInPage_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <style>\n");
+      out.write("            body\n");
+      out.write("            {\n");
+      out.write("                background-image: url(resources/r4.jpg);\n");
+      out.write("            }\n");
+      out.write("            #tab\n");
+      out.write("            {\n");
+      out.write("                list-style: none; \n");
+      out.write("            }\n");
+      out.write("            #tab table {\n");
+      out.write("                \n");
+      out.write("                background-color: green;   \n");
+      out.write("                border:1px solid;\n");
+      out.write("            }\n");
+      out.write("            #tab table tbody tr\n");
+      out.write("            {\n");
+      out.write("               text-align:left;\n");
+      out.write("               color: pink;\n");
+      out.write("               height: 70px;\n");
+      out.write("              \n");
+      out.write("            }\n");
+      out.write("            #tab tr td\n");
+      out.write("            {\n");
+      out.write("                padding: 20px;\n");
+      out.write("                \n");
+      out.write("            }\n");
+      out.write("            #tab tr td input\n");
+      out.write("            {\n");
+      out.write("                width: 200px;\n");
+      out.write("                height: 30px;\n");
+      out.write("                font-family:verdana;\n");
+      out.write("                font-size: 15px;\n");
+      out.write("                \n");
+      out.write("            }\n");
+      out.write("              #tab tr td select\n");
+      out.write("            {\n");
+      out.write("                width: 200px;\n");
+      out.write("                height: 30px;\n");
+      out.write("                font-family:verdana;\n");
+      out.write("                font-size: 15px;\n");
+      out.write("                \n");
+      out.write("            }\n");
+      out.write("             #tab tr td select:hover\n");
+      out.write("            {\n");
+      out.write("                background-color: blue;\n");
+      out.write("            }\n");
+      out.write("             #tab tr td input:hover\n");
+      out.write("            {\n");
+      out.write("                background-color: blue;\n");
+      out.write("            }\n");
+      out.write("            \n");
+      out.write("               #tab tr td a\n");
+      out.write("            {\n");
+      out.write("                width: 200px;\n");
+      out.write("                height: 30px;\n");
+      out.write("                font-family:verdana;\n");
+      out.write("                font-size: 20px;\n");
+      out.write("                color:skyblue;\n");
+      out.write("               \n");
+      out.write("            }\n");
+      out.write("              #tab tr td a:hover\n");
+      out.write("              {\n");
+      out.write("                  color: red;\n");
+      out.write("              }\n");
+      out.write("         \n");
+      out.write("            .val_error\n");
+      out.write("            {\n");
+      out.write("                background-color:#5E6E66;\n");
+      out.write("                color:red;\n");
+      out.write("              \n");
+      out.write("                text-align: center;\n");
+      out.write("                font-family: verdana;\n");
+      out.write("                font-size: 20px;\n");
+      out.write("                \n");
+      out.write("        \n");
+      out.write("               \n");
+      out.write("            }\n");
+      out.write("        </style>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <h1 style=\"color:pink;\"><marquee Bgcolor=\"red\" width=\"100%px\" height=\"10%px\" behavior=\"alternate\" scrolldelay=\"5\">WELCOME TO ONLINE AUDITORIUM BOOKING SYSTEM</marquee></h1>\n");
+      out.write("      \n");
+      out.write("\n");
+      out.write("    <marquee><img src=\"resources/p3.jpg\" style=\"position:absolute;bottom:200px;left:20px;\"></marquee>\n");
+      out.write("        <img src=\"resources/p4.jpg\" style=\"position:absolute;bottom:200px;left:300px;\">\n");
+      out.write("\n");
+      out.write("        \n");
+      out.write("    <form action=\"Check.jsp\" method=\"post\" name=\"vform\" onsubmit=\"return validate()\">\n");
+      out.write("        <div class=\"tab\" id=\"tab\">\n");
+      out.write("      <table align=\"right\">\n");
+      out.write("            <tbody>\n");
+      out.write("                    <tr>\n");
+      out.write("            <div>\n");
+      out.write("                <td colspan=\"3\" align=\"center\" bgcolor=\"red\">LOGIN FORM</td>\n");
+      out.write("                   \n");
+      out.write("            </div>\n");
+      out.write("                 \n");
+      out.write("                <tr>\n");
+      out.write("            <div>\n");
+      out.write("                    <td>ID</td>\n");
+      out.write("                    <td><input type=\"text\" name=\"id\"/> </td>\n");
+      out.write("                    <div id=\"id_error\" class=\"val_error\"></div>\n");
+      out.write("            </div>\n");
+      out.write("                </tr>  \n");
+      out.write("               \n");
+      out.write("                <tr>\n");
+      out.write("                <div>\n");
+      out.write("                    <td>PASSWORD</td>\n");
+      out.write("                    <td><input type=\"Password\" name=\"upass\"/></td>\n");
+      out.write("                      <div id=\"upass_error\" class=\"val_error\"></div>\n");
+      out.write("                </div>\n");
+      out.write("                </tr>\n");
+      out.write("                 <tr>\n");
+      out.write("                <div>\n");
+      out.write("                    <td>LOGIN TYPE</td>\n");
+      out.write("                    <td><select name=\"uname\">\n");
+      out.write("                    <option>USER</option>\n");
+      out.write("                    <option>ADMIN</option></select></td>\n");
+      out.write("                      <div id=\"uname_error\" class=\"val_error\"></div>\n");
+      out.write("                </div>\n");
+      out.write("                </tr> \n");
+      out.write("                \n");
+      out.write("                <tr>\n");
+      out.write("               \n");
+      out.write("                <td > <input type=\"Submit\" name=\"password\" value=\"LOGIN\"/></td>\n");
+      out.write("                  <td ><input type=\"reset\" name=\"reset\" value=\"RESET\"/></td>\n");
+      out.write("                    <td><a href=\"Signupuser.jsp\">Sign Up</a></td>\n");
+      out.write("                </tr>\n");
+      out.write("                              \n");
+      out.write("\n");
+      out.write("          </tbody>\n");
+      out.write("            </table>\n");
+      out.write("        </div>\n");
+      out.write("    </form>\n");
+      out.write(" \n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+      out.write("<script type=\"text/javascript\">\n");
+      out.write("//getting all inputs text objects\n");
+      out.write("var id=document.forms[\"vform\"][\"id\"];\n");
+      out.write("var uname=document.forms[\"vform\"][\"uname\"];\n");
+      out.write("var upass=document.forms[\"vform\"][\"upass\"];\n");
+      out.write("//getting all error display objects\n");
+      out.write("var id_error=document.getElementById(\"id_error\");\n");
+      out.write("var uname_error=document.getElementById(\"uname_error\");\n");
+      out.write("var upass_error=document.getElementById(\"upass_error\");\n");
+      out.write("\n");
+      out.write("//setting all event listener\n");
+      out.write("id.addEventListener(\"blur\",idVarify,true);\n");
+      out.write("uname.addEventListener(\"blur\",unameVarify,true);\n");
+      out.write("upass.addEventListener(\"blur\",upassVarify,true);\n");
+      out.write("\n");
+      out.write("//validation function\n");
+      out.write("function validate()\n");
+      out.write("{\n");
+      out.write("    if(id.value==\"\")\n");
+      out.write("    {\n");
+      out.write("        id.style.border=\"1px solid red\";\n");
+      out.write("        \n");
+      out.write("        id_error.textContent=\"Id is Required\";\n");
+      out.write("        id.focus();\n");
+      out.write("        return false;\n");
+      out.write("    }\n");
+      out.write("    if(uname.value==\"\")\n");
+      out.write("    {\n");
+      out.write("        uname.style.border=\"1px solid red\";\n");
+      out.write("        uname_error.textContent=\"UserName is Required\";\n");
+      out.write("        uname.focus();\n");
+      out.write("        return false;\n");
+      out.write("    }\n");
+      out.write("    if(upass.value==\"\")\n");
+      out.write("    {\n");
+      out.write("        upass.style.border=\"1px solid red\";\n");
+      out.write("        upass_error.textContent=\"Password is Required\";\n");
+      out.write("        upass.focus();\n");
+      out.write("        return false;\n");
+      out.write("    }\n");
+      out.write("}\n");
+      out.write("\n");
+      out.write("//event handler function\n");
+      out.write("\n");
+      out.write("function idVarify()\n");
+      out.write("{\n");
+      out.write("    if(id.value!=\"\")\n");
+      out.write("    {\n");
+      out.write("       id.style.border=\"1px solid #5E6E66\";\n");
+      out.write("         \n");
+      out.write("        id_error.innerHTML=\"\";  \n");
+      out.write("        return true;\n");
+      out.write("    }\n");
+      out.write("    \n");
+      out.write("}\n");
+      out.write("function unameVarify()\n");
+      out.write("{\n");
+      out.write("    if(uname.value!=\"\")\n");
+      out.write("    {\n");
+      out.write("         uname.style.border=\"1px solid #5E6E66\";\n");
+      out.write("        uname_error.innerHTML=\"\";  \n");
+      out.write("        return true;\n");
+      out.write("    }\n");
+      out.write("    \n");
+      out.write("}\n");
+      out.write("function upassVarify()\n");
+      out.write("{\n");
+      out.write("    if(upass.value!=\"\")\n");
+      out.write("    {\n");
+      out.write("         upass.style.border=\"1px solid #5E6E66\";\n");
+      out.write("        upass_error.innerHTML=\"\";  \n");
+      out.write("        return true;\n");
+      out.write("    }\n");
+      out.write("    \n");
+      out.write("}\n");
+      out.write("</script>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
